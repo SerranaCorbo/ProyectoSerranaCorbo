@@ -1,0 +1,132 @@
+/*importante: las imagenes que estoy usando no son las definitivas, son gratuitas descargadas de las paginas que subio la profe, pero para esta pre-entrega las puse como muestra :)*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    height: 90vh;
+    background-image: url(../assets/img/imagen\ fondo\ prueba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.contenedorLogo{
+    width: 45%;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.logo{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.navegacion{
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+}
+
+.listaItem{
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+/*anclas de la navegacion*/
+.linkNav{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:rgb(25, 25, 25)
+}
+
+/*estilados del titulo principal del index*/
+.contenedorTituloHeader{
+    width: 50%;
+    height: 25vh;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(12px);
+}
+
+.contenedorTituloHeader h1{
+    font-size: 2.5rem;
+}
+
+.contenedorTituloHeader p{
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.main{
+    background-color: white;
+    height: 80vh;
+}
+
+.seccionCards{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.seccionCards h2{
+    padding-bottom: 7vh;
+}
+
+.card{
+    width: 30%;
+    display: inline-block;
+    box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
+    -webkit-box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
+    -moz-box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
+    background-color: rgb(226, 210, 203);
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.card img{
+    width: 95%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.footer{
+    background-color: rgb(226, 210, 203);
+    height: 30vh;
+    text-align: center;
+}
+
+.footer p{
+    font-size: 1rem;
+    padding-top: 50px;
+}
+
+.linkRedes{
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.icon{
+    color: white;
+    font-size: 2rem;
+    margin-top: 40px;
+}
