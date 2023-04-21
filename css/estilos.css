@@ -1,4 +1,3 @@
-/*importante: las imagenes que estoy usando no son las definitivas, son gratuitas descargadas de las paginas que subio la profe, pero para esta pre-entrega las puse como muestra :)*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 *{
     margin: 0;
@@ -11,107 +10,148 @@ body{
 }
 
 .header{
-    height: 90vh;
-    background-image: url(../assets/img/imagen\ fondo\ prueba.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: rgba(250, 245, 243, 0.711);
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 200;
 }
 
-.contenedorLogo{
-    width: 45%;
-    display: inline-block;
-    padding-top: 15px;
-}
-
-.logo{
-    width: 30%;
-    margin-left: 20px;
-}
-
-.navegacion{
-    width: 50%;
-    display: inline-block;
-    text-align: right;
-}
-
-.listaItem{
-    list-style: none;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 0;
-    padding-bottom: 15px;
-}
-
-/*anclas de la navegacion*/
-.linkNav{
-    text-decoration: none;
-    font-size: 1.2rem;
-    color:rgb(25, 25, 25)
-}
-
-/*estilados del titulo principal del index*/
-.contenedorTituloHeader{
-    width: 50%;
-    height: 25vh;
-    margin: 0 auto;
-    margin-top: 200px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    backdrop-filter: blur(12px);
-}
-
-.contenedorTituloHeader h1{
-    font-size: 2.5rem;
-}
-
-.contenedorTituloHeader p{
-    font-size: 1.5rem;
-    padding-top: 20px;
+.item{
+    font-size: 18px;
 }
 
 .main{
-    background-color: white;
-    height: 80vh;
+    height: auto;
 }
 
-.seccionCards{
+.contenedorTitulo{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 10vh;
-    padding-bottom: 10vh;
+    justify-content: center;
 }
 
-.seccionCards h2{
-    padding-bottom: 7vh;
+.tituloPag{
+    color: rgb(178, 135, 118);
+    font-size: 28px;
+}
+
+.subtituloPag{
+    font-size: 18px;
+}
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 5rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.brillo{
+    filter: brightness(80%);
+    filter: opacity(80%);
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.contenedorFraseIndex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+}
+
+.fraseIndex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.parrafoDos{
+    color: rgb(178, 135, 118);
+    font-weight:bolder
+}
+
+.tarjetas{
+    margin-bottom: 10vh;
 }
 
 .card{
-    width: 30%;
-    display: inline-block;
-    box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
-    -webkit-box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
-    -moz-box-shadow: 1px 0px 73px -5px rgba(161, 140, 140, 0.75);
-    background-color: rgb(226, 210, 203);
-    border-radius: 20px;
-    padding: 15px;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    background-color: rgb(250, 245, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
 
-.card img{
-    width: 95%;
+.card-img-top{
+    filter: brightness(85%);
+    filter: opacity(95%);
+}
+
+.card-title{
+    color: rgb(178, 135, 118);
+}
+
+.imagenBeneficios{
+    background-image: url(../assets/img/imagenbeneficios.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(85%);
+    filter: opacity(95%);
+    height: 50vh;
+}
+
+.textoBeneficios{
     height: 40vh;
-    object-fit: cover;
-    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textoBeneficios p{
+    height: 100%;
+}
+
+.texto{
+    font-size: 16px;
+}
+
+.imagenSobreMi{
+    background-image: url(../assets/img/imagensobremi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(85%);
+    filter: opacity(95%);
+    height: 60vh;
 }
 
 .footer{
+    background-color: rgb(250, 245, 243);
     background-color: rgb(226, 210, 203);
-    height: 30vh;
+    height: 40vh;
     text-align: center;
 }
 
@@ -120,13 +160,73 @@ body{
     padding-top: 50px;
 }
 
-.linkRedes{
+.footer__linkRedes{
     text-decoration: none;
-    padding-left: 20px;
+    padding-left: 25px;
+}
+
+.footer__wppFixed{
+    text-decoration: none;
 }
 
 .icon{
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 40px;
+}
+
+.iconFixed{
+    color: rgb(178, 135, 118);
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+span{
+    color: rgb(178, 135, 118);
+}
+
+@media screen and (min-width:0px) and (max-width:768px){
+    .parrafoDos{
+        font-size: 12px;
+    }
+    .parrafoUno{
+        font-size: 12px;
+    }
+    .fraseIndex{
+        width: 95%;
+    }
+    .tituloPag{
+        font-size: 24px;
+    }
+    
+    .subtituloPag{
+        font-size: 14px;
+    }
+    .texto{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .parrafoDos{
+        font-size: 14px;
+    }
+    .parrafoUno{
+        font-size: 14px;
+    }
+    .fraseIndex{
+        width: 80%;
+    }
+    .tituloPag{
+        font-size: 24px;
+    }
+    
+    .subtituloPag{
+        font-size: 16px;
+    }
+    .titulo{
+        font-size: 14px;
+    }
 }

@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Syntonia</title>
-        <link rel="stylesheet" href="../css/estilos.css">
-        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/d941871b1b.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="contenedorLogo">
-                <img class="logo" src="../assets/img/logo principal.png" alt="logo jabones" width="200px">
-            </div>
-            <nav class="navegacion">
-                <ul>
-                    <li class="listaItem"><a class="linkNav" href="../index.html">Inicio</a></li>
-                    <li class="listaItem"><a class="linkNav" href="#">Catálogo</a></li>
-                    <li class="listaItem"><a class="linkNav" href="beneficios.html">Beneficios</a></li>
-                    <li class="listaItem"><a class="linkNav" href="sobremi.html">Sobre mí</a></li>
-                    <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <section>
-                <div class="contenedorTituloHeader">
-                    <h1>Catálogo</h1>
-                    <p>Descubre nuestra variedad de jabones naturales</p>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/d941871b1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/img/logo principal.png" alt="" width="180">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-end">
+                            <li class="nav-item item">
+                                <a class="nav-link link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link link" href="beneficios.html">Beneficios</a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link link" href="sobremi.html">Sobre mí</a>
+                            </li>
+                            <li class="nav-item item">
+                                <a class="nav-link link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </section>
-        </header>
-        <main class="main">
-            <img src="" alt="imagencatalogo">
-            <img src="" alt="imagencatalogo">
-            <img src="" alt="imagencatalogo">
-            <img src="" alt="imagencatalogo">
-        </main>
-        <footer class="footer">
-            <p>Todos los derechos reservados© - Serrana Corbo</p>
-            <div>
-                <a class="linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
-                <a class="linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
-                <a class="linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+            </nav>
+        </div>
+    </header>
+    <main class="main container mt-5 mb-5">
+        <section class="row">
+            <div class="col contenedorTitulo">
+                <h1 class="tituloPag">Catálogo</h1>
+                <p class="subtituloPag">Descubre nuestra <span>variedad</span> de <span>jabones naturales</span></p>
             </div>
-        </footer>
-    </body>
+        </section>
+        <section class="row tarjetasCatálogo">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card tarjetaCatalogo rounded-3" style="width: 24rem;">
+                    <img src="../assets/img/jabonlimon.jpg" class="card-img-top rounded-3" alt="tarjeta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jabón de limón</h5>
+                        <p>Jabón cítrico elaborado con limón y jengibre. Astringente, antioxidante y humectante</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card tajetaCatalogo rounded-3" style="width: 24rem;">
+                    <img src="../assets/img/jabonjazmin.jpg" class="card-img-top rounded-3" alt="tarjeta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Jabón de jazmín</h5>
+                        <p>Jabón elaborado con jazmín y coco. Efecto nutritivo, hidratante y relajante</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card tarjetaCatalogo rounded-3" style="width: 24rem;">
+                    <img src="../assets/img/jabonavena.jpg" class="card-img-top rounded-3" alt="tarjeta 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jabón de avena</h5>
+                        <p>Jabón elaborado con avena miel y coco. Exfoliante e hidratante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container-fluid">
+        <p>Todos los derechos reservados© - Serrana Corbo</p>
+        <div>
+            <a class="footer__linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+            <a class="footer__linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
+            <a class="footer__linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+            <a class="footer__wppFixed" href="https://www.whatsapp.com/" target="_blank"><i class="iconFixed fa-brands fa-whatsapp"></i><a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
