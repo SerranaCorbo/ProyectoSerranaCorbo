@@ -43,14 +43,14 @@
                 .parrafoDos{
                     color: $color-principal;
                     font-size: 20px;
-                    font-weight:bolder
+                    font-weight: $fuente-negrita
                 }
             }
         }
         .tarjetas{
             margin-bottom: 10vh;
             .card{
-                background-color: $color-header;
+                background-color: $color-clarito;
                 display: flex;
                 justify-content: center;
                 align-items: center;

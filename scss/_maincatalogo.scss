@@ -1,13 +1,10 @@
 
     .mainCatalogo{
         padding-top: 10vh;
-        padding-bottom: 5vh;
+        padding-bottom: 2vh;
         .seccionTitulo{
             .contenedorTitulo{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                justify-content: center;
+                @include flexbox (center, center, column);
                 .tituloPag{
                     animation-name: aparecer;
                     animation-duration: 1s;

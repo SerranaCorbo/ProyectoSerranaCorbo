@@ -1,12 +1,9 @@
 
     .mainContacto{
         padding-top: 10vh;
-        padding-bottom: 5vh;
+        padding-bottom: 2vh;
         .contenedorTitulo{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
+            @include flexbox (center, center, column);
             .tituloPag{
                 animation-name: aparecer;
                 animation-duration: 1s;
@@ -23,7 +20,7 @@
             &:focus{
                 color: #212529;
                 background-color: #fff;
-                border-color: $color-header;
+                border-color: $color-clarito;
                 outline: 0;
                 box-shadow: 0 0 0 0.25rem rgba(143, 104, 88, 0.25);
             }
@@ -39,6 +36,16 @@
             &:hover{
                 color: $color-principal;
             }
+        }
+        .botonContacto--enviar{
+            @extend .botonContacto;
+            background-color: $color-cuatro;
+            border-color: $color-cuatro;
+        }
+        .botonContacto--borrar{
+            @extend .botonContacto;
+            background-color: $color-secundario;
+            border-color: $color-secundario;
         }
     }
 

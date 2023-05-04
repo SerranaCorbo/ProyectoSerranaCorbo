@@ -1,11 +1,8 @@
     .mainSobremi{
         padding-top: 10vh;
-        padding-bottom: 5vh;
+        padding-bottom: 2vh;
         .contenedorTituloSobremi{
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            flex-direction: column;
+            @include flexbox (center, center, column);
             .tituloPagSobremi{
                 animation-name: aparecer;
                 animation-duration: 1s;
@@ -21,7 +18,6 @@
         .contenedorAnimaciones{
             overflow: hidden;
             .contenedorTextoSobremi{
-                /*@include flexbox (center, center, column);*/
                 display: flex;
                 text-align: center;
                 justify-content: center;

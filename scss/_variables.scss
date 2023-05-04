@@ -1,16 +1,12 @@
 $fuente-principal: 'Assistant', sans-serif;
 $color-principal: rgb(178, 135, 118);
 $color-secundario: rgb(226, 210, 203);
-$color-header: rgb(250, 245, 243);
+$color-clarito: rgb(250, 245, 243);
+$color-cuatro: rgb(204, 175, 164);
+$fuente-negrita: bold;
 
 $sizes:(
     titulo: 24px,
     subtitulo: 18px,
-    texto :16px,
-);
-
-$fuentes:(
-    thin:100,
-    light:300,
-    regular:400,
+    textochico :16px,
 );

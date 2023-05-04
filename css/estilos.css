@@ -38,7 +38,7 @@ body {
   background-color: rgb(226, 210, 203);
   height: auto;
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 18vh;
 }
 .footer .footer__p {
   font-size: 1rem;
@@ -123,7 +123,7 @@ body {
 .mainIndex .contenedorFraseIndex .fraseIndex .parrafoDos {
   color: rgb(178, 135, 118);
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .mainIndex .tarjetas {
   margin-bottom: 10vh;
@@ -171,13 +171,13 @@ body {
 }
 .mainCatalogo {
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 .mainCatalogo .seccionTitulo .contenedorTitulo {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .mainCatalogo .seccionTitulo .contenedorTitulo .tituloPag {
   animation-name: aparecer;
@@ -227,12 +227,12 @@ body {
 }
 .mainSobremi {
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 .mainSobremi .contenedorTituloSobremi {
   display: flex;
-  text-align: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .mainSobremi .contenedorTituloSobremi .tituloPagSobremi {
@@ -250,7 +250,6 @@ body {
   overflow: hidden;
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi {
-  /*@include flexbox (center, center, column);*/
   display: flex;
   text-align: center;
   justify-content: center;
@@ -298,13 +297,13 @@ body {
 }
 .mainBeneficios {
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 .mainBeneficios .contenedorTitulo {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .mainBeneficios .contenedorTitulo .tituloPag {
   animation-name: aparecer;
@@ -358,13 +357,13 @@ body {
 }
 .mainContacto {
   padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-bottom: 2vh;
 }
 .mainContacto .contenedorTitulo {
   display: flex;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .mainContacto .contenedorTitulo .tituloPag {
   animation-name: aparecer;
@@ -384,7 +383,7 @@ body {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(143, 104, 88, 0.25);
 }
-.mainContacto .botonContacto {
+.mainContacto .botonContacto, .mainContacto .botonContacto--borrar, .mainContacto .botonContacto--enviar {
   color: white;
   background-color: rgb(226, 210, 203);
   border-color: rgb(226, 210, 203);
@@ -393,8 +392,16 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.mainContacto .botonContacto:hover {
+.mainContacto .botonContacto:hover, .mainContacto .botonContacto--borrar:hover, .mainContacto .botonContacto--enviar:hover {
   color: rgb(178, 135, 118);
+}
+.mainContacto .botonContacto--enviar {
+  background-color: rgb(204, 175, 164);
+  border-color: rgb(204, 175, 164);
+}
+.mainContacto .botonContacto--borrar {
+  background-color: rgb(226, 210, 203);
+  border-color: rgb(226, 210, 203);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
