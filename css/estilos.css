@@ -10,7 +10,7 @@ body{
 }
 
 .header{
-    background-color: rgba(250, 245, 243, 0.711);
+    background-color: rgba(250, 245, 243, 0.881);
     height: auto;
     position: sticky;
     top: 0;
@@ -153,6 +153,7 @@ body{
     background-color: rgb(226, 210, 203);
     height: 40vh;
     text-align: center;
+    margin-top: 10rem;
 }
 
 .footer p{
