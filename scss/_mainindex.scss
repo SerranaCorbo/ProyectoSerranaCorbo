@@ -1,0 +1,108 @@
+
+    .mainIndex{
+        height: auto;
+        .carousel {
+            margin-bottom: 4rem;
+            .carousel-item {
+                height: 32rem;
+                .carousel-caption {
+                    bottom: 5rem;
+                    z-index: 10;
+                    .tituloCarrusel{
+                        animation-name: aparecer;
+                        animation-duration: 1s;
+                    }
+                    .subtituloCarrusel{
+                        animation-name: aparecer;
+                        animation-duration: 1s;
+                        font-size: 28px;
+                    }
+                }
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    min-width: 100%;
+                    height: 32rem;
+                }
+            }
+        }
+        .contenedorFraseIndex{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            .fraseIndex{
+                font-size: 18px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                width: 50%;
+                .parrafoDos{
+                    color: $color-principal;
+                    font-size: 20px;
+                    font-weight:bolder
+                }
+            }
+        }
+        .tarjetas{
+            margin-bottom: 10vh;
+            .card{
+                background-color: $color-header;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                .card-img-top{
+                    filter: brightness(85%);
+                    filter: opacity(95%);
+                }
+                .card-title{
+                    color: rgb(80, 80, 80);
+                    font-size: 20px;
+                    &:hover{
+                        color: $color-principal;
+                    }
+                }
+            }
+        }
+    }
+
+
+@media screen and (min-width:0px) and (max-width:768px){
+    body{
+        .mainIndex{
+            .contenedorFraseIndex{
+                .fraseIndex{
+                    width: 95%;
+                    .parrafoDos{
+                        font-size: 14px;
+                    }
+                    .parrafoUno{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .mainIndex{
+            .contenedorFraseIndex{
+                .fraseIndex{
+                    width: 80%;
+                    .parrafoDos{
+                        font-size: 16px;
+                    }
+                    .parrafoUno{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

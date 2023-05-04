@@ -1,0 +1,81 @@
+    .mainBeneficios{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        .contenedorTitulo{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            .tituloPag{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key:titulo)
+            }
+            .subtituloPag{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                font-size: map-get($map: $sizes, $key:subtitulo)
+            }
+        }
+        .contenedorAnimaciones{
+            overflow: hidden;
+            .imagenBeneficios{
+                background-image: url(../assets/img/pexels-alesia-kozik-7796158\ \(1\).jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                filter: brightness(85%);
+                filter: opacity(95%);
+                height: 60vh;
+            }
+            .textoBeneficios{
+                height: 50vh;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                .texto{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+@media screen and (min-width:0px) and (max-width:768px){
+    body{
+        .mainBeneficios{
+            .row{
+                .contenedorTitulo{
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+                .textoBeneficios{
+                    .texto{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .mainBeneficios{
+            .row{
+                .contenedorTitulo{
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+                .textoBeneficios{
+                    .texto{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

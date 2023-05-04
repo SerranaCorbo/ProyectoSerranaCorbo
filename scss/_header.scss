@@ -1,0 +1,16 @@
+.header{
+    background-color: rgba(250, 245, 243, 0.862);
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    .item{
+        font-size: 18px;
+        .link{
+            &:hover{
+                color: $color-principal !important;
+            }
+            transition: color 0.5s;
+        }
+    }
+}

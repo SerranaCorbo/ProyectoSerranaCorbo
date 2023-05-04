@@ -1,0 +1,92 @@
+    .mainSobremi{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        .contenedorTituloSobremi{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            .tituloPagSobremi{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key:titulo)
+            }
+            .subtituloPagSobremi{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                font-size: map-get($map: $sizes, $key:subtitulo)
+            }
+        }
+        .contenedorAnimaciones{
+            overflow: hidden;
+            .contenedorTextoSobremi{
+                /*@include flexbox (center, center, column);*/
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                flex-direction: column;
+                .textoSobremi{
+                    font-size: 18px;
+                }
+                .textoSobremiDos{
+                    font-size: 18px;
+                }
+        }
+        }
+        .imagenSobreMi{
+            background-image: url(../assets/img/pexels-mikhail-nilov-6706901\ \(1\).jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: brightness(85%);
+            filter: opacity(95%);
+            filter: saturate(90%);
+            filter: contrast(80%);
+            height: 60vh;
+        }
+    }
+
+@media screen and (min-width:0px) and (max-width:768px){
+    body{
+        .mainSobremi{
+            .row{
+                .contenedorTituloSobremi{
+                    .subtituloPagSobremi{
+                        font-size: 16px;
+                    }
+                }
+                .contenedorTextoSobremi{
+                    .textoSobremi{
+                        font-size: 16px;
+                    }
+                    .textoSobremiDos{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .mainSobremi{
+            .row{
+                .contenedorTituloSobremi{
+                    .subtituloPagSobremi{
+                        font-size: 16px;
+                    }
+                }
+                .contenedorTextoSobremi{
+                    .textoSobremi{
+                        font-size: 16px;
+                    }
+                    .textoSobremiDos{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

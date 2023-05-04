@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syntonía</title>
+    <meta name="description" content="Descubri mi selección de jabones artesanales hechos con ingredientes naturales. Son elaborados con amor y cuidado para brindar a tu piel una limpieza suave y efectiva">
+    <meta name="keywords" content="jabones, artesanales, natural, piel, cuidado, saludable, sostenible">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d941871b1b.js" crossorigin="anonymous"></script>
+    <title>Syntonía - Inicio</title>
 </head>
 <body>
     <header class="header container-fluid">
@@ -24,19 +27,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav w-100 justify-content-end">
                             <li class="nav-item item">
-                                <a class="nav-link link" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link link" aria-current="page" href="#">INICIO</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="./pages/catalogo.html">Catálogo</a>
+                                <a class="nav-link link" href="./pages/catalogo.html">CATÁLOGO</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="./pages/beneficios.html">Beneficios</a>
+                                <a class="nav-link link" href="./pages/beneficios.html">BENEFICIOS</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="./pages/sobremi.html">Sobre mí</a>
+                                <a class="nav-link link" href="./pages/sobremi.html">SOBRE MÍ</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="./pages/contacto.html">Contacto</a>
+                                <a class="nav-link link" href="./pages/contacto.html">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +47,7 @@
             </nav>
         </div>
     </header>
-    <main class="main container-fluid">
+    <main class="mainIndex container-fluid">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -55,22 +58,22 @@
                 <div class="carousel-item active">
                     <img src="./assets/img/carrusel3.jpg" class="d-block w-100 brillo cover" alt="carrusel1">
                     <div class="carousel-caption">
-                        <h1>Jabones Artesanales</h1>
-                        <h4>El cuidado natural de tu piel</h4>
+                        <h1 class="tituloCarrusel">JABONES ARTESANALES</h1>
+                        <h2 class="subtituloCarrusel">El cuidado natural de tu piel</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/carrusel1.jpg" class="d-block w-100 brillo cover" alt="carrusel2">
                     <div class="carousel-caption">
-                        <h1>Jabones Artesanales</h1>
-                        <h4>El cuidado natural de tu piel</h4>
+                        <h1>JABONES ARTESANALES</h1>
+                        <h2 class="subtituloCarrusel">El cuidado natural de tu piel</h2>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="./assets/img/carrusel2.jpg" class="d-block w-100 brillo cover" alt="carrusel3">
                     <div class="carousel-caption">
-                        <h1>Jabones Artenales</h1>
-                        <h4>El cuidado natural de tu piel</h4>
+                        <h1>JABONES ARTESANALES</h1>
+                        <h2 class="subtituloCarrusel">El cuidado natural de tu piel</h2>
                     </div>
                 </div>
                 </div>
@@ -87,50 +90,83 @@
             <div class="container-fluid">
                 <div class="row contenedorFraseIndex">
                     <div class="col-12 fraseIndex">
-                        <p class="parrafoUno">Bienvenido a nuestro mundo de jabones artesanales elaborados a mano y con mucho amor. Una alternativa saludable y sostenible a los productos comerciales de cuidado personal.</p>
-                        <p class="parrafoDos">Te invitamos a conocer</p>
+                        <p class="parrafoUno">Bienvenido/a a mi mundo de jabones artesanales elaborados a mano y con mucho amor. Una alternativa saludable y sostenible a los productos comerciales de cuidado personal.</p>
+                        <p class="parrafoDos">¡Te invito a conocer!</p>
                     </div>
                 </div>
             </div>
 
             <section class="row tarjetas">
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-                    <div class="card rounded-3" style="width: 24rem;">
-                        <a href="./pages/beneficios.html"><img src="./assets/img/cardbeneficios.jpg" class="card-img-top rounded-3" alt="tarjeta 1"></a>
+                    <div data-aos="zoom-in-up" class="card rounded-3" style="width: 22rem;">
+                        <a href="./pages/beneficios.html"><img src="./assets/img/beneficios card.jpg" class="card-img-top rounded-3" alt="tarjeta 1"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Beneficios</h5>
+                            <h3 class="card-title">Beneficios</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-                    <div class="card rounded-3" style="width: 24rem;">
-                        <a href="./pages/catalogo.html"><img src="./assets/img/cardcatalogo.jpg" class="card-img-top rounded-3" alt="tarjeta 2"></a>
+                    <div data-aos="zoom-in-up" class="card rounded-3" style="width: 22rem;">
+                        <a href="./pages/catalogo.html"><img src="./assets/img/catalogo card.jpg" class="card-img-top rounded-3" alt="tarjeta 2"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Catálogo</h5>
+                            <h3 class="card-title">Catálogo</h3>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
-                    <div class="card rounded-3" style="width: 24rem;">
-                        <a href="./pages/sobremi.html"><img src="./assets/img/cardsobremi.jpg" class="card-img-top rounded-3" alt="tarjeta 3"></a>
+                    <div data-aos="zoom-in-up" class="card rounded-3" style="width: 22rem;">
+                        <a href="./pages/sobremi.html"><img src="./assets/img/sobremi card.jpg" class="card-img-top rounded-3" alt="tarjeta 3"></a>
                         <div class="card-body">
-                            <h5 class="card-title">Sobre mí</h5>
+                            <h3 class="card-title">Sobre mí</h3>
                         </div>
                     </div>
                 </div>
             </section>
 </main>
 
-
     <footer class="footer container-fluid">
-        <p>Todos los derechos reservados© - Serrana Corbo</p>
-        <div>
-            <a class="footer__linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
-            <a class="footer__linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
-            <a class="footer__linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
-            <a class="footer__wppFixed" href="https://www.whatsapp.com/" target="_blank"><i class="iconFixed fa-brands fa-whatsapp"></i><a>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.040561244438!2d-56.17460930000001!3d-34.90543160000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b158a2be0b%3A0xaf914e4b566973c5!2sGuan%C3%A1%20%26%20Eduardo%20Acevedo%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678900971511!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="mt-5">
+                    <a href="./index.html"><img src="./assets/img/logo principal.png" width="180" alt="logofooter"></a>
+                </div>
+                <div class="footer__div d-flex justify-content-evenly align-items-center">
+                    <a class="footer__div__linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+                    <a class="footer__div__linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
+                    <a class="footer__div__linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+                </div>
+                <div>
+                    <p class="footer__p">Todos los derechos reservados© - Serrana Corbo</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <ul class="listaFooter">
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./pages/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./pages/beneficios.html">Beneficios</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./pages/sobremi.html">Sobre mi</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="footer__div__wppFixed" href="https://www.whatsapp.com/" target="_blank"><i class="iconFixed fa-brands fa-whatsapp"></i><a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+
+    .mainContacto{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        .contenedorTitulo{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            .tituloPag{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key:titulo)
+            }
+            .subtituloPag{
+                animation-name: aparecer;
+                animation-duration: 1s;
+                font-size: map-get($map: $sizes, $key:subtitulo)
+            }
+        }
+        .textoContacto{
+            &:focus{
+                color: #212529;
+                background-color: #fff;
+                border-color: $color-header;
+                outline: 0;
+                box-shadow: 0 0 0 0.25rem rgba(143, 104, 88, 0.25);
+            }
+        }
+        .botonContacto{
+            color: white;
+            background-color: $color-secundario;
+            border-color: $color-secundario;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            &:hover{
+                color: $color-principal;
+            }
+        }
+    }
+
+
+@media screen and (min-width:0px) and (max-width:768px){
+    body{
+        .mainContacto{
+            .row{
+                .contenedorTitulo{
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .mainContacto{
+            .row{
+                .contenedorTitulo{
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

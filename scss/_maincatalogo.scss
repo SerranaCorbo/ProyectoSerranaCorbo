@@ -1,0 +1,79 @@
+
+    .mainCatalogo{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        .seccionTitulo{
+            .contenedorTitulo{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                .tituloPag{
+                    animation-name: aparecer;
+                    animation-duration: 1s;
+                    color: $color-principal;
+                    font-size: map-get($map: $sizes, $key:titulo)
+                }
+                .subtituloPag{
+                    animation-name: aparecer;
+                    animation-duration: 1s;
+                    font-size: map-get($map: $sizes, $key:subtitulo)
+                }
+            }
+        }
+        .tarjetasCatalogo{
+            margin-top: 10vh;
+            .tarjetaCatalogo{
+                animation-name: aparecer;
+                animation-duration: 1.5s;
+                border: none;
+                .card-title{
+                    animation-name: aparecer;
+                    animation-duration: 2s;
+                    color: $color-principal;
+                    font-size: 18px;
+                }
+                .parrafoTarjetaCatalogo{
+                    animation-name: aparecer;
+                    animation-duration: 2.5s;
+                }
+            }
+        }
+        
+    }
+
+
+@media screen and (min-width:0px) and (max-width:768px){
+    body{
+        .mainCatalogo{
+            .seccionTitulo{
+                .contenedorTitulo{
+                    .tituloPag{
+                        font-size: 24px;
+                    }
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .mainCatalogo{
+            .seccionTitulo{
+                .contenedorTitulo{
+                    .tituloPag{
+                        font-size: 24px;
+                    }
+                    .subtituloPag{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
