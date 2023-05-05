@@ -258,7 +258,6 @@ body {
 .mainSobremi .contenedorTituloSobremi .subtituloPagSobremi {
   animation-name: aparecer;
   animation-duration: 1s;
-  font-size: 18px;
 }
 .mainSobremi .contenedorAnimaciones {
   overflow: hidden;

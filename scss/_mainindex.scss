@@ -34,7 +34,7 @@
             margin-top: 10vh;
             margin-bottom: 10vh;
             .fraseIndex{
-                font-size: 18px;
+                font-size: map-get($map: $sizes, $key:texto);
                 display: flex;
                 flex-direction: column;
                 text-align: center;
@@ -96,10 +96,10 @@
                 .fraseIndex{
                     width: 80%;
                     .parrafoDos{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                     .parrafoUno{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }

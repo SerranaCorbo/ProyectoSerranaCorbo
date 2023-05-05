@@ -23,10 +23,10 @@
                 justify-content: center;
                 flex-direction: column;
                 .textoSobremi{
-                    font-size: 18px;
+                    font-size: map-get($map: $sizes, $key:texto);
                 }
                 .textoSobremiDos{
-                    font-size: 18px;
+                    font-size: map-get($map: $sizes, $key:texto);
                 }
         }
         }
@@ -49,15 +49,15 @@
             .row{
                 .contenedorTituloSobremi{
                     .subtituloPagSobremi{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
                 .contenedorTextoSobremi{
                     .textoSobremi{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                     .textoSobremiDos{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }
@@ -71,15 +71,15 @@
             .row{
                 .contenedorTituloSobremi{
                     .subtituloPagSobremi{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
                 .contenedorTextoSobremi{
                     .textoSobremi{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                     .textoSobremiDos{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }

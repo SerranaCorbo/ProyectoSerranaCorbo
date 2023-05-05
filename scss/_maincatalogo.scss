@@ -14,7 +14,7 @@
                 .subtituloPag{
                     animation-name: aparecer;
                     animation-duration: 1s;
-                    font-size: map-get($map: $sizes, $key:subtitulo)
+                    font-size: map-get($map: $sizes, $key:texto)
                 }
             }
         }
@@ -28,7 +28,7 @@
                     animation-name: aparecer;
                     animation-duration: 2s;
                     color: $color-principal;
-                    font-size: 18px;
+                    font-size: map-get($map: $sizes, $key:texto)
                 }
                 .parrafoTarjetaCatalogo{
                     animation-name: aparecer;
@@ -46,10 +46,10 @@
             .seccionTitulo{
                 .contenedorTitulo{
                     .tituloPag{
-                        font-size: 24px;
+                        font-size: map-get($map: $sizes, $key:titulo);
                     }
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }
@@ -63,10 +63,10 @@
             .seccionTitulo{
                 .contenedorTitulo{
                     .tituloPag{
-                        font-size: 24px;
+                        font-size: map-get($map: $sizes, $key:titulo);
                     }
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }

@@ -13,7 +13,7 @@
             .subtituloPag{
                 animation-name: aparecer;
                 animation-duration: 1s;
-                font-size: map-get($map: $sizes, $key:subtitulo)
+                font-size: map-get($map: $sizes, $key:texto)
             }
         }
         .textoContacto{
@@ -56,7 +56,7 @@
             .row{
                 .contenedorTitulo{
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }
@@ -70,7 +70,7 @@
             .row{
                 .contenedorTitulo{
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }

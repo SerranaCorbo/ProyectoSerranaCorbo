@@ -12,7 +12,7 @@
             .subtituloPag{
                 animation-name: aparecer;
                 animation-duration: 1s;
-                font-size: map-get($map: $sizes, $key:subtitulo)
+                font-size: map-get($map: $sizes, $key:texto)
             }
         }
         .contenedorAnimaciones{
@@ -33,7 +33,7 @@
                 justify-content: center;
                 flex-direction: column;
                 .texto{
-                    font-size: 18px;
+                    font-size: map-get($map: $sizes, $key:texto);
                 }
             }
         }
@@ -45,12 +45,12 @@
             .row{
                 .contenedorTitulo{
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
                 .textoBeneficios{
                     .texto{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }
@@ -64,12 +64,12 @@
             .row{
                 .contenedorTitulo{
                     .subtituloPag{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
                 .textoBeneficios{
                     .texto{
-                        font-size: 16px;
+                        font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
             }
