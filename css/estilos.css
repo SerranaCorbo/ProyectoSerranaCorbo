@@ -13,6 +13,20 @@
   box-sizing: border-box;
 }
 
+.brillo {
+  filter: brightness(80%);
+  filter: opacity(80%);
+}
+
+.cover {
+  object-fit: cover;
+}
+
+span {
+  color: rgb(178, 135, 118);
+  font-weight: bold;
+}
+
 body {
   font-family: "Assistant", sans-serif;
 }
@@ -262,7 +276,7 @@ body {
   font-size: 18px;
 }
 .mainSobremi .imagenSobreMi {
-  background-image: url(../assets/img/pexels-mikhail-nilov-6706901\ \(1\).jpg);
+  background-image: url(../assets/img/imagensobremi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -320,7 +334,7 @@ body {
   overflow: hidden;
 }
 .mainBeneficios .contenedorAnimaciones .imagenBeneficios {
-  background-image: url(../assets/img/pexels-alesia-kozik-7796158\ \(1\).jpg);
+  background-image: url(../assets/img/imagenbeneficios.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -413,18 +427,6 @@ body {
   body .mainContacto .row .contenedorTitulo .subtituloPag {
     font-size: 16px;
   }
-}
-.brillo {
-  filter: brightness(80%);
-  filter: opacity(80%);
-}
-
-.cover {
-  object-fit: cover;
-}
-
-span {
-  color: rgb(178, 135, 118);
 }
 
 /*# sourceMappingURL=estilos.css.map */
