@@ -2,10 +2,13 @@
     background-color: rgb(226, 210, 203);
     height: auto;
     text-align: center;
-    margin-top: 18vh;
-    .footer__p{
-        font-size: 1rem;
-        padding-top: 50px;
+    margin-top: 20vh;
+    .footer__contenedorP{
+        margin-top: 2.5rem;
+        .footer__contenedorP__p{
+            font-size: map-get($map: $sizes, $key:textochico);
+            color: $color-letranegra;
+        }
     }
     .footer__div{
         .footer__div__linkRedes{
@@ -17,7 +20,6 @@
             margin-top: 40px;
         }
     }
-
     .footer__wppFixed{
         text-decoration: none;
     }
@@ -30,11 +32,12 @@
     }
     .listaFooter{
         list-style: none;
+        padding-left: 0;
         .itemFooter{
             text-decoration: none;
             .linkFooter{
                 text-decoration: none;
-                color: rgb(64, 57, 57);
+                color: $color-letranegra;
                 &:hover{
                     color: $color-principal;
                 }

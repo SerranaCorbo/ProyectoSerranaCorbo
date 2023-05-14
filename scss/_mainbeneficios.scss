@@ -12,19 +12,21 @@
             .subtituloPag{
                 animation-name: aparecer;
                 animation-duration: 1s;
-                font-size: map-get($map: $sizes, $key:texto)
+                color: $color-letranegra;
+                font-size: map-get($map: $sizes, $key:subtitulo)
             }
         }
         .contenedorAnimaciones{
             overflow: hidden;
             .imagenBeneficios{
-                background-image: url(../assets/img/imagenbeneficios.jpg);
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
                 filter: brightness(85%);
                 filter: opacity(95%);
-                height: 60vh;
+                height: 65vh;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
             .textoBeneficios{
                 height: 50vh;
@@ -34,9 +36,21 @@
                 flex-direction: column;
                 .texto{
                     font-size: map-get($map: $sizes, $key:texto);
+                    color: $color-letranegra;
                 }
             }
         }
+        .seccionBeneficios{
+            margin-top: 7rem;
+            .seccionBeneficios__contenedorfrase__frase{
+                font-size: map-get($map: $sizes, $key:subtitulo);
+                color: $color-letranegra
+            }
+            img{
+                width: 280px;
+            }
+        }
+        
     }
 
 @media screen and (min-width:0px) and (max-width:768px){
@@ -50,6 +64,14 @@
                 }
                 .textoBeneficios{
                     .texto{
+                        font-size: map-get($map: $sizes, $key:textomaschico);
+                    }
+                }
+            }
+            .seccionBeneficios{
+                margin-top: 1rem;
+                .seccionBeneficios__contenedorfrase{
+                    .seccionBeneficios__contenedorfrase__frase{
                         font-size: map-get($map: $sizes, $key:textochico);
                     }
                 }
@@ -64,7 +86,7 @@
             .row{
                 .contenedorTitulo{
                     .subtituloPag{
-                        font-size: map-get($map: $sizes, $key:textochico);
+                        font-size: map-get($map: $sizes, $key:texto);
                     }
                 }
                 .textoBeneficios{
@@ -73,6 +95,48 @@
                     }
                 }
             }
+            .seccionBeneficios{
+                margin-top: 1rem;
+                .seccionBeneficios__contenedorfrase{
+                    .seccionBeneficios__contenedorfrase__frase{
+                        font-size: map-get($map: $sizes, $key:texto);
+                    }
+                }
+                .seccionBeneficiosImagenes{
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
         }
     }
 }
+
+@media screen and (min-width:1025px) and (max-width:1199px){
+    body{
+        .mainBeneficios{
+            .row{
+                .contenedorTitulo{
+                    .subtituloPag{
+                        font-size: map-get($map: $sizes, $key:subtitulo);
+                    }
+                }
+                .textoBeneficios{
+                    .texto{
+                        font-size: map-get($map: $sizes, $key:texto);
+                    }
+                }
+            }
+            .seccionBeneficios{
+                margin-top: 1.5rem;
+                .seccionBeneficios__contenedorfrase{
+                    .seccionBeneficios__contenedorfrase__frase{
+                        font-size: map-get($map: $sizes, $key:subtitulo);
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,63 +1,72 @@
-    .mainSobremi{
-        padding-top: 10vh;
-        padding-bottom: 2vh;
-        .contenedorTituloSobremi{
-            @include flexbox (center, center, column);
-            .tituloPagSobremi{
-                animation-name: aparecer;
-                animation-duration: 1s;
-                color: $color-principal;
-                font-size: map-get($map: $sizes, $key:titulo)
-            }
-            .subtituloPagSobremi{
-                animation-name: aparecer;
-                animation-duration: 1s;
-                font-size: map-get($map: $sizes, $key:subtitulo)
-            }
+.mainSobremi {
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    .contenedorTituloSobremi {
+        @include flexbox (center, center, column);
+        .tituloPagSobremi {
+            animation-name: aparecer;
+            animation-duration: 1s;
+            color: $color-principal;
+            font-size: map-get($map: $sizes, $key: titulo)
         }
-        .contenedorAnimaciones{
-            overflow: hidden;
-            .contenedorTextoSobremi{
-                display: flex;
-                text-align: center;
-                justify-content: center;
-                flex-direction: column;
-                .textoSobremi{
-                    font-size: map-get($map: $sizes, $key:texto);
-                }
-                .textoSobremiDos{
-                    font-size: map-get($map: $sizes, $key:texto);
-                }
-        }
-        }
-        .imagenSobreMi{
-            background-image: url(../assets/img/imagensobremi.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: brightness(85%);
-            filter: opacity(95%);
-            filter: saturate(90%);
-            filter: contrast(80%);
-            height: 60vh;
+        .subtituloPagSobremi {
+            animation-name: aparecer;
+            animation-duration: 1s;
+            font-size: map-get($map: $sizes, $key: subtitulo);
+            color: $color-letranegra;
         }
     }
+    .contenedorAnimaciones {
+        overflow: hidden;
+        .contenedorTextoSobremi {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 55vh;
+            .subtituloSobremi{
+                font-size: map-get($map: $sizes, $key:subtitulo );
+                color: $color-letranegra;
+                padding-bottom: 1rem;
+                font-weight: bold;
+            }
+            .textoSobremi {
+                font-size: map-get($map: $sizes, $key: texto);
+                color: $color-letranegra;
+            }
+            .textoSobremiDos {
+                font-size: map-get($map: $sizes, $key: texto);
+                color: $color-letranegra;
+            }
+        }
+        .imagenSobreMi {
+            height: 65vh;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(85%);
+                filter: opacity(95%);
+            }
+        }
+    }
+}
 
-@media screen and (min-width:0px) and (max-width:768px){
-    body{
-        .mainSobremi{
-            .row{
-                .contenedorTituloSobremi{
-                    .subtituloPagSobremi{
-                        font-size: map-get($map: $sizes, $key:textochico);
+@media screen and (min-width:0px) and (max-width:768px) {
+    body {
+        .mainSobremi {
+            .row {
+                .contenedorTituloSobremi {
+                    .subtituloPagSobremi {
+                        font-size: map-get($map: $sizes, $key: textochico);
                     }
                 }
-                .contenedorTextoSobremi{
-                    .textoSobremi{
-                        font-size: map-get($map: $sizes, $key:textochico);
+                .contenedorTextoSobremi {
+                    .textoSobremi {
+                        font-size: map-get($map: $sizes, $key: textomaschico);
                     }
-                    .textoSobremiDos{
-                        font-size: map-get($map: $sizes, $key:textochico);
+                    .textoSobremiDos {
+                        font-size: map-get($map: $sizes, $key: textomaschico);
                     }
                 }
             }
@@ -65,24 +74,28 @@
     }
 }
 
-@media screen and (min-width:769px) and (max-width:1024px){
-    body{
-        .mainSobremi{
-            .row{
-                .contenedorTituloSobremi{
-                    .subtituloPagSobremi{
-                        font-size: map-get($map: $sizes, $key:textochico);
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body {
+        .mainSobremi {
+            .row {
+                .contenedorTituloSobremi {
+                    .subtituloPagSobremi {
+                        font-size: map-get($map: $sizes, $key: texto);
                     }
                 }
-                .contenedorTextoSobremi{
-                    .textoSobremi{
-                        font-size: map-get($map: $sizes, $key:textochico);
+                .contenedorTextoSobremi {
+                    .textoSobremi {
+                        font-size: map-get($map: $sizes, $key: textochico);
                     }
-                    .textoSobremiDos{
-                        font-size: map-get($map: $sizes, $key:textochico);
+                    .textoSobremiDos {
+                        font-size: map-get($map: $sizes, $key: textochico);
                     }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width:991px) {
+
 }

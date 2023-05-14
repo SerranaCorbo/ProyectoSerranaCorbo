@@ -39,7 +39,7 @@ body {
   z-index: 200;
 }
 .header .item {
-  font-size: 18px;
+  font-size: 16px;
 }
 .header .item .link {
   transition: color 0.5s;
@@ -52,11 +52,14 @@ body {
   background-color: rgb(226, 210, 203);
   height: auto;
   text-align: center;
-  margin-top: 18vh;
+  margin-top: 20vh;
 }
-.footer .footer__p {
-  font-size: 1rem;
-  padding-top: 50px;
+.footer .footer__contenedorP {
+  margin-top: 2.5rem;
+}
+.footer .footer__contenedorP .footer__contenedorP__p {
+  font-size: 16px;
+  color: rgb(102, 101, 101);
 }
 .footer .footer__div .footer__div__linkRedes {
   text-decoration: none;
@@ -78,13 +81,14 @@ body {
 }
 .footer .listaFooter {
   list-style: none;
+  padding-left: 0;
 }
 .footer .listaFooter .itemFooter {
   text-decoration: none;
 }
 .footer .listaFooter .itemFooter .linkFooter {
   text-decoration: none;
-  color: rgb(64, 57, 57);
+  color: rgb(102, 101, 101);
 }
 .footer .listaFooter .itemFooter .linkFooter:hover {
   color: rgb(178, 135, 118);
@@ -92,9 +96,6 @@ body {
 
 .mainIndex {
   height: auto;
-}
-.mainIndex .carousel {
-  margin-bottom: 4rem;
 }
 .mainIndex .carousel .carousel-item {
   height: 32rem;
@@ -123,16 +124,19 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  padding-top: 12vh;
+  padding-bottom: 12vh;
 }
 .mainIndex .contenedorFraseIndex .fraseIndex {
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   width: 50%;
+}
+.mainIndex .contenedorFraseIndex .fraseIndex .parrafoUno {
+  color: rgb(102, 101, 101);
 }
 .mainIndex .contenedorFraseIndex .fraseIndex .parrafoDos {
   color: rgb(178, 135, 118);
@@ -153,12 +157,12 @@ body {
   filter: brightness(85%);
   filter: opacity(95%);
 }
-.mainIndex .tarjetas .card .card-title {
-  color: rgb(80, 80, 80);
-  font-size: 20px;
+.mainIndex .tarjetas .card .card-img-top:hover {
+  transform: scale(1.1, 1.1);
 }
-.mainIndex .tarjetas .card .card-title:hover {
-  color: rgb(178, 135, 118);
+.mainIndex .tarjetas .card .card-title {
+  color: rgb(102, 101, 101);
+  font-size: 20px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -166,10 +170,10 @@ body {
     width: 95%;
   }
   body .mainIndex .contenedorFraseIndex .fraseIndex .parrafoDos {
-    font-size: 14px;
+    font-size: 16px;
   }
   body .mainIndex .contenedorFraseIndex .fraseIndex .parrafoUno {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -177,10 +181,10 @@ body {
     width: 80%;
   }
   body .mainIndex .contenedorFraseIndex .fraseIndex .parrafoDos {
-    font-size: 16px;
+    font-size: 18px;
   }
   body .mainIndex .contenedorFraseIndex .fraseIndex .parrafoUno {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .mainCatalogo {
@@ -202,25 +206,27 @@ body {
 .mainCatalogo .seccionTitulo .contenedorTitulo .subtituloPag {
   animation-name: aparecer;
   animation-duration: 1s;
-  font-size: 18px;
+  font-size: 20px;
+  color: rgb(102, 101, 101);
 }
 .mainCatalogo .tarjetasCatalogo {
   margin-top: 10vh;
 }
-.mainCatalogo .tarjetasCatalogo .tarjetaCatalogo {
+.mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div__tarjeta {
   animation-name: aparecer;
   animation-duration: 1.5s;
   border: none;
 }
-.mainCatalogo .tarjetasCatalogo .tarjetaCatalogo .card-title {
+.mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div__tarjeta .card-title {
   animation-name: aparecer;
   animation-duration: 2s;
   color: rgb(178, 135, 118);
   font-size: 18px;
 }
-.mainCatalogo .tarjetasCatalogo .tarjetaCatalogo .parrafoTarjetaCatalogo {
+.mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div__tarjeta .parrafoTarjetaCatalogo {
   animation-name: aparecer;
   animation-duration: 2.5s;
+  color: rgb(102, 101, 101);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -230,13 +236,19 @@ body {
   body .mainCatalogo .seccionTitulo .contenedorTitulo .subtituloPag {
     font-size: 16px;
   }
+  body .mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div .tarjetasCatalogo__div__tarjeta .card-title {
+    font-size: 16px;
+  }
+  body .mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div .tarjetasCatalogo__div__tarjeta .parrafoTarjetaCatalogo {
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body .mainCatalogo .seccionTitulo .contenedorTitulo .tituloPag {
     font-size: 24px;
   }
   body .mainCatalogo .seccionTitulo .contenedorTitulo .subtituloPag {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .mainSobremi {
@@ -258,6 +270,8 @@ body {
 .mainSobremi .contenedorTituloSobremi .subtituloPagSobremi {
   animation-name: aparecer;
   animation-duration: 1s;
+  font-size: 20px;
+  color: rgb(102, 101, 101);
 }
 .mainSobremi .contenedorAnimaciones {
   overflow: hidden;
@@ -267,23 +281,31 @@ body {
   text-align: center;
   justify-content: center;
   flex-direction: column;
+  height: 55vh;
+}
+.mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .subtituloSobremi {
+  font-size: 20px;
+  color: rgb(102, 101, 101);
+  padding-bottom: 1rem;
+  font-weight: bold;
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .textoSobremi {
   font-size: 18px;
+  color: rgb(102, 101, 101);
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .textoSobremiDos {
   font-size: 18px;
+  color: rgb(102, 101, 101);
 }
-.mainSobremi .imagenSobreMi {
-  background-image: url(../assets/img/imagensobremi.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.mainSobremi .contenedorAnimaciones .imagenSobreMi {
+  height: 65vh;
+}
+.mainSobremi .contenedorAnimaciones .imagenSobreMi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   filter: brightness(85%);
   filter: opacity(95%);
-  filter: saturate(90%);
-  filter: contrast(80%);
-  height: 60vh;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -291,15 +313,15 @@ body {
     font-size: 16px;
   }
   body .mainSobremi .row .contenedorTextoSobremi .textoSobremi {
-    font-size: 16px;
+    font-size: 14px;
   }
   body .mainSobremi .row .contenedorTextoSobremi .textoSobremiDos {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body .mainSobremi .row .contenedorTituloSobremi .subtituloPagSobremi {
-    font-size: 16px;
+    font-size: 18px;
   }
   body .mainSobremi .row .contenedorTextoSobremi .textoSobremi {
     font-size: 16px;
@@ -327,19 +349,21 @@ body {
 .mainBeneficios .contenedorTitulo .subtituloPag {
   animation-name: aparecer;
   animation-duration: 1s;
-  font-size: 18px;
+  color: rgb(102, 101, 101);
+  font-size: 20px;
 }
 .mainBeneficios .contenedorAnimaciones {
   overflow: hidden;
 }
 .mainBeneficios .contenedorAnimaciones .imagenBeneficios {
-  background-image: url(../assets/img/imagenbeneficios.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   filter: brightness(85%);
   filter: opacity(95%);
-  height: 60vh;
+  height: 65vh;
+}
+.mainBeneficios .contenedorAnimaciones .imagenBeneficios img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .mainBeneficios .contenedorAnimaciones .textoBeneficios {
   height: 50vh;
@@ -350,6 +374,17 @@ body {
 }
 .mainBeneficios .contenedorAnimaciones .textoBeneficios .texto {
   font-size: 18px;
+  color: rgb(102, 101, 101);
+}
+.mainBeneficios .seccionBeneficios {
+  margin-top: 7rem;
+}
+.mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase__frase {
+  font-size: 20px;
+  color: rgb(102, 101, 101);
+}
+.mainBeneficios .seccionBeneficios img {
+  width: 280px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -357,18 +392,49 @@ body {
     font-size: 16px;
   }
   body .mainBeneficios .row .textoBeneficios .texto {
+    font-size: 14px;
+  }
+  body .mainBeneficios .seccionBeneficios {
+    margin-top: 1rem;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase .seccionBeneficios__contenedorfrase__frase {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body .mainBeneficios .row .contenedorTitulo .subtituloPag {
-    font-size: 16px;
+    font-size: 18px;
   }
   body .mainBeneficios .row .textoBeneficios .texto {
     font-size: 16px;
   }
+  body .mainBeneficios .seccionBeneficios {
+    margin-top: 1rem;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase .seccionBeneficios__contenedorfrase__frase {
+    font-size: 18px;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficiosImagenes img {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  body .mainBeneficios .row .contenedorTitulo .subtituloPag {
+    font-size: 20px;
+  }
+  body .mainBeneficios .row .textoBeneficios .texto {
+    font-size: 18px;
+  }
+  body .mainBeneficios .seccionBeneficios {
+    margin-top: 1.5rem;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase .seccionBeneficios__contenedorfrase__frase {
+    font-size: 20px;
+  }
 }
 .mainContacto {
+  /*background-image: url(../assets/img/aceitesescchica.jpg);
+      background-repeat: no-repeat;*/
   padding-top: 10vh;
   padding-bottom: 2vh;
 }
@@ -387,7 +453,8 @@ body {
 .mainContacto .contenedorTitulo .subtituloPag {
   animation-name: aparecer;
   animation-duration: 1s;
-  font-size: 18px;
+  font-size: 20px;
+  color: rgb(102, 101, 101);
 }
 .mainContacto .textoContacto:focus {
   color: #212529;
@@ -396,23 +463,23 @@ body {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(143, 104, 88, 0.25);
 }
-.mainContacto .botonContacto, .mainContacto .botonContacto--borrar, .mainContacto .botonContacto--enviar {
+.mainContacto .botonContacto, .mainContacto .botonContacto--enviar, .mainContacto .botonContacto--borrar {
   color: white;
   background-color: rgb(226, 210, 203);
   border-color: rgb(226, 210, 203);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.mainContacto .botonContacto:hover, .mainContacto .botonContacto--borrar:hover, .mainContacto .botonContacto--enviar:hover {
+.mainContacto .botonContacto:hover, .mainContacto .botonContacto--enviar:hover, .mainContacto .botonContacto--borrar:hover {
   color: rgb(178, 135, 118);
 }
-.mainContacto .botonContacto--enviar {
+.mainContacto .botonContacto--borrar {
   background-color: rgb(204, 175, 164);
   border-color: rgb(204, 175, 164);
 }
-.mainContacto .botonContacto--borrar {
+.mainContacto .botonContacto--enviar {
   background-color: rgb(226, 210, 203);
   border-color: rgb(226, 210, 203);
 }
@@ -424,8 +491,11 @@ body {
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body .mainContacto .row .contenedorTitulo .subtituloPag {
-    font-size: 16px;
+    font-size: 18px;
   }
+}
+.main404 {
+  height: auto;
 }
 
 /*# sourceMappingURL=estilos.css.map */
