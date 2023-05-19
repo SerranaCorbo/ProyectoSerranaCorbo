@@ -14,7 +14,7 @@
 }
 
 .brillo {
-  filter: brightness(80%);
+  filter: brightness(50%);
   filter: opacity(80%);
 }
 
@@ -59,7 +59,7 @@ body {
 }
 .footer .footer__contenedorP .footer__contenedorP__p {
   font-size: 16px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .footer .footer__div .footer__div__linkRedes {
   text-decoration: none;
@@ -88,7 +88,7 @@ body {
 }
 .footer .listaFooter .itemFooter .linkFooter {
   text-decoration: none;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .footer .listaFooter .itemFooter .linkFooter:hover {
   color: rgb(178, 135, 118);
@@ -107,6 +107,7 @@ body {
 .mainIndex .carousel .carousel-item .carousel-caption .tituloCarrusel {
   animation-name: aparecer;
   animation-duration: 1s;
+  font-size: 40px;
 }
 .mainIndex .carousel .carousel-item .carousel-caption .subtituloCarrusel {
   animation-name: aparecer;
@@ -136,7 +137,7 @@ body {
   width: 50%;
 }
 .mainIndex .contenedorFraseIndex .fraseIndex .parrafoUno {
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainIndex .contenedorFraseIndex .fraseIndex .parrafoDos {
   color: rgb(178, 135, 118);
@@ -161,7 +162,7 @@ body {
   transform: scale(1.1, 1.1);
 }
 .mainIndex .tarjetas .card .card-title {
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
   font-size: 20px;
 }
 
@@ -207,7 +208,7 @@ body {
   animation-name: aparecer;
   animation-duration: 1s;
   font-size: 20px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainCatalogo .tarjetasCatalogo {
   margin-top: 10vh;
@@ -226,7 +227,7 @@ body {
 .mainCatalogo .tarjetasCatalogo .tarjetasCatalogo__div__tarjeta .parrafoTarjetaCatalogo {
   animation-name: aparecer;
   animation-duration: 2.5s;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -271,7 +272,7 @@ body {
   animation-name: aparecer;
   animation-duration: 1s;
   font-size: 20px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainSobremi .contenedorAnimaciones {
   overflow: hidden;
@@ -285,17 +286,17 @@ body {
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .subtituloSobremi {
   font-size: 20px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
   padding-bottom: 1rem;
   font-weight: bold;
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .textoSobremi {
   font-size: 18px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainSobremi .contenedorAnimaciones .contenedorTextoSobremi .textoSobremiDos {
   font-size: 18px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainSobremi .contenedorAnimaciones .imagenSobreMi {
   height: 65vh;
@@ -349,7 +350,7 @@ body {
 .mainBeneficios .contenedorTitulo .subtituloPag {
   animation-name: aparecer;
   animation-duration: 1s;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
   font-size: 20px;
 }
 .mainBeneficios .contenedorAnimaciones {
@@ -374,14 +375,14 @@ body {
 }
 .mainBeneficios .contenedorAnimaciones .textoBeneficios .texto {
   font-size: 18px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainBeneficios .seccionBeneficios {
   margin-top: 7rem;
 }
 .mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase__frase {
   font-size: 20px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainBeneficios .seccionBeneficios img {
   width: 280px;
@@ -454,7 +455,7 @@ body {
   animation-name: aparecer;
   animation-duration: 1s;
   font-size: 20px;
-  color: rgb(102, 101, 101);
+  color: rgb(88, 88, 88);
 }
 .mainContacto .textoContacto:focus {
   color: #212529;
@@ -496,6 +497,34 @@ body {
 }
 .main404 {
   height: auto;
+}
+.main404 .seccion404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main404 .seccion404 .seccion404__texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+}
+.main404 .seccion404 .seccion404__texto h1 {
+  color: rgb(178, 135, 118);
+  font-size: 70px;
+}
+.main404 .seccion404 .seccion404__texto h2 {
+  padding-top: 2vh;
+  color: rgb(88, 88, 88);
+}
+.main404 .seccion404 .seccion404__texto a {
+  text-decoration: none;
+}
+.main404 .seccion404 .seccion404__texto a h3 {
+  padding-top: 2vh;
+  color: rgb(178, 135, 118);
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

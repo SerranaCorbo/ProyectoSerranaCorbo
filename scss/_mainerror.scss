@@ -1,3 +1,31 @@
 .main404{
     height: auto;
+    .seccion404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .seccion404__texto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 10vh;
+            h1{
+                color: $color-principal;
+                font-size: 70px;
+            }
+            h2{
+                padding-top: 2vh;
+                color: $color-letranegra;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    padding-top: 2vh;
+                    color: $color-principal;
+                    font-size: map-get($map: $sizes, $key:titulo );
+                }
+            }
+        }
+    }
 }
