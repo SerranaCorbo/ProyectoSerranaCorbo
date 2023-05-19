@@ -1,0 +1,88 @@
+.mainCatalogo {
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    .seccionTitulo {
+        .contenedorTitulo {
+            @include flexbox (center, center, column);
+            .tituloPag {
+                animation-name: aparecer;
+                animation-duration: 1s;
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key: titulo)
+            }
+            .subtituloPag {
+                animation-name: aparecer;
+                animation-duration: 1s;
+                font-size: map-get($map: $sizes, $key: subtitulo);
+                color: $color-letranegra;
+            }
+        }
+    }
+    .tarjetasCatalogo {
+        margin-top: 10vh;
+        .tarjetasCatalogo__div__tarjeta {
+            animation-name: aparecer;
+            animation-duration: 1.5s;
+            border: none;
+            .card-title {
+                animation-name: aparecer;
+                animation-duration: 2s;
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key: texto)
+            }
+            .parrafoTarjetaCatalogo {
+                animation-name: aparecer;
+                animation-duration: 2.5s;
+                color: $color-letranegra;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    body {
+        .mainCatalogo {
+            .seccionTitulo {
+                .contenedorTitulo {
+                    .tituloPag {
+                        font-size: map-get($map: $sizes, $key: titulo);
+                    }
+                    .subtituloPag {
+                        font-size: map-get($map: $sizes, $key: textochico);
+                    }
+                }
+            }
+            .tarjetasCatalogo{
+                .tarjetasCatalogo__div{
+                    .tarjetasCatalogo__div__tarjeta{
+                        .card-title{
+                            font-size: map-get($map: $sizes, $key: textochico);
+                        }
+                        .parrafoTarjetaCatalogo{
+                            font-size: map-get($map: $sizes, $key: textomaschico);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body {
+        .mainCatalogo {
+            .seccionTitulo {
+                .contenedorTitulo {
+                    .tituloPag {
+                        font-size: map-get($map: $sizes, $key: titulo);
+                    }
+                    .subtituloPag {
+                        font-size: map-get($map: $sizes, $key: texto);
+                    }
+                }
+            }
+        }
+    }
+}

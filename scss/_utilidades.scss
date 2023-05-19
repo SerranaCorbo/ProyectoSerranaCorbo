@@ -1,0 +1,11 @@
+.brillo{
+    filter: brightness(80%);
+    filter: opacity(80%);
+}
+.cover{
+    object-fit: cover;
+}
+span{
+    color: rgb(178, 135, 118);
+    font-weight: $fuente-negrita;
+}

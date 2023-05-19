@@ -1,0 +1,51 @@
+.footer{
+    background-color: rgb(226, 210, 203);
+    height: auto;
+    text-align: center;
+    margin-top: 20vh;
+    .footer__contenedorP{
+        margin-top: 2.5rem;
+        .footer__contenedorP__p{
+            font-size: map-get($map: $sizes, $key:textochico);
+            color: $color-letranegra;
+        }
+    }
+    .footer__div{
+        .footer__div__linkRedes{
+            text-decoration: none;
+        }
+        .icon{
+            color: white;
+            font-size: 3rem;
+            margin-top: 40px;
+        }
+    }
+    .footer__wppFixed{
+        text-decoration: none;
+    }
+    .iconFixed{
+        color: $color-principal;
+        font-size: 3rem;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    .listaFooter{
+        list-style: none;
+        padding-left: 0;
+        .itemFooter{
+            text-decoration: none;
+            .linkFooter{
+                text-decoration: none;
+                color: $color-letranegra;
+                &:hover{
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}
+
+
+
+

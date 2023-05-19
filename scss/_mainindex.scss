@@ -1,0 +1,110 @@
+.mainIndex {
+    height: auto;
+    .carousel {
+        .carousel-item {
+            height: 32rem;
+            .carousel-caption {
+                bottom: 5rem;
+                z-index: 10;
+                .tituloCarrusel {
+                    animation-name: aparecer;
+                    animation-duration: 1s;
+                    font-size: 40px;
+                }
+                .subtituloCarrusel {
+                    animation-name: aparecer;
+                    animation-duration: 1s;
+                    font-size: map-get($map: $sizes, $key: titulogrande)
+                }
+            }
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+                min-width: 100%;
+                height: 32rem;
+            }
+        }
+    }
+    .contenedorFraseIndex {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 12vh;
+        padding-bottom: 12vh;
+        .fraseIndex {
+            font-size: map-get($map: $sizes, $key: subtitulo);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 50%;
+            .parrafoUno {
+                color: $color-letranegra;
+            }
+            .parrafoDos {
+                color: $color-principal;
+                font-size: map-get($map: $sizes, $key: subtitulo);
+                font-weight: $fuente-negrita
+            }
+        }
+    }
+    .tarjetas {
+        margin-bottom: 10vh;
+        .card {
+            background-color: $color-clarito;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            .card-img-top {
+                filter: brightness(85%);
+                filter: opacity(95%);
+                &:hover{
+                    transform: scale(1.1,1.1);
+                }
+            }
+            .card-title {
+                color: $color-letranegra;
+                font-size: map-get($map: $sizes, $key: subtitulo);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:0px) and (max-width:768px) {
+    body {
+        .mainIndex {
+            .contenedorFraseIndex {
+                .fraseIndex {
+                    width: 95%;
+                    .parrafoDos {
+                        font-size: map-get($map: $sizes, $key: textochico);
+                    }
+                    .parrafoUno {
+                        font-size: map-get($map: $sizes, $key: textochico);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    body {
+        .mainIndex {
+            .contenedorFraseIndex {
+                .fraseIndex {
+                    width: 80%;
+                    .parrafoDos {
+                        font-size: map-get($map: $sizes, $key: texto);
+                    }
+                    .parrafoUno {
+                        font-size: map-get($map: $sizes, $key: texto);
+                    }
+                }
+            }
+        }
+    }
+}

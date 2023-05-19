@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta name="description" content="Contactate rellenando el formulario de contacto con tus datos y un mensaje, tus consultas y dudas serán respondidas a la brevedad">
+    <meta name="keywords" content="jabones, artesanales, contacto, consultas, mensaje,">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/d941871b1b.js" crossorigin="anonymous"></script>
+    <title>Contacto | Syntonía</title>
 </head>
 <body>
     <header class="header container-fluid">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="../assets/img/logo principal.png" alt="" width="180">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/logo principal.png" alt="logo" width="170">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -24,19 +28,19 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav w-100 justify-content-end">
                             <li class="nav-item item">
-                                <a class="nav-link link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link link" aria-current="page" href="../index.html">INICIO</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="catalogo.html">Catálogo</a>
+                                <a class="nav-link link" href="catalogo.html">CATÁLOGO</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="beneficios.html">Beneficios</a>
+                                <a class="nav-link link" href="beneficios.html">BENEFICIOS</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="sobremi.html">Sobre mí</a>
+                                <a class="nav-link link" href="sobremi.html">SOBRE MÍ</a>
                             </li>
                             <li class="nav-item item">
-                                <a class="nav-link link" href="#">Contacto</a>
+                                <a class="nav-link link" href="#">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -44,45 +48,84 @@
             </nav>
         </div>
     </header>
-    <main class="mainFondo main container mt-5 mb-5">
+    <main class="mainContacto container">
         <section class="row">
             <div class="col contenedorTitulo">
-                <h1 class="tituloPag">Contacto</h1>
-                <p class="subtituloPag">Envía tu <span>mensaje</span> para hacer tus <span>pedidos</span> o para cualquier otra <span>consulta</span>.</p>
+                <h1 class="tituloPag">CONTACTO</h1>
+                <p class="subtituloPag">Rellena el formulario para enviar tu mensaje, hacer tus pedidos o para cualquier otra consulta ¡Te responderé a la brevedad!</p>
             </div>
         </section>
-        <section class="row">
-            <div class="col-sm-12 col-md-5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.040561244438!2d-56.17460930000001!3d-34.90543160000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b158a2be0b%3A0xaf914e4b566973c5!2sGuan%C3%A1%20%26%20Eduardo%20Acevedo%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678900971511!5m2!1ses-419!2suy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class=".contenedorMapaForm row">
+            <div class="mapaContacto d-flex justify-content-center align-items-center col-sm-12 col-md-12 col-lg-6 col-xl-5 pt-5">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.040561244438!2d-56.17460930000001!3d-34.90543160000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b158a2be0b%3A0xaf914e4b566973c5!2sGuan%C3%A1%20%26%20Eduardo%20Acevedo%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678900971511!5m2!1ses-419!2suy" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-sm-12 col-md-7">
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Ingresa tu nombre" required>
+            <div class="formContacto col-sm-12 col-md-12 col-lg-6 col-xl-7 pt-5">
+                <form action="pagina404.html">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control textoContacto" id="floatingInput" placeholder="name" required>
+                        <label for="floatingInput">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control textoContacto" id="floatingInput" placeholder="email" required>
+                        <label for="floatingPassword">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control textoContacto" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Deja tu mensaje</label>
                     </div>
                     <div>
-                        <input type="email" placeholder="Ingresa tu mail" required>
-                    </div>
-                    <div>
-                        <textarea  cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
+                        <button type="submit" class="botonContacto botonContacto--enviar btn btn-primary me-2">Borrar</button>
+                        <button type="submit" class="botonContacto botonContacto--borrar btn btn-primary ms-2">Enviar</button>
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer container-fluid">
-        <p>Todos los derechos reservados© - Serrana Corbo</p>
-        <div>
-            <a class="footer__linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
-            <a class="footer__linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
-            <a class="footer__linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
-            <a class="footer__wppFixed" href="https://www.whatsapp.com/" target="_blank"><i class="iconFixed fa-brands fa-whatsapp"></i><a>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 pt-5">
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.040561244438!2d-56.17460930000001!3d-34.90543160000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b158a2be0b%3A0xaf914e4b566973c5!2sGuan%C3%A1%20%26%20Eduardo%20Acevedo%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1678900971511!5m2!1ses-419!2suy" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="mt-5">
+                    <a href="../index.html"><img src="../assets/img/logo principal.png" width="170" alt="logofooter"></a>
+                </div>
+                <div class="footer__div d-flex justify-content-evenly align-items-center">
+                    <a class="footer__div__linkRedes" href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram"></i></a>
+                    <a class="footer__div__linkRedes" href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp"></i></a>
+                    <a class="footer__div__linkRedes" href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="footer__contenedorP">
+                    <p class="footer__contenedorP__p">Todos los derechos reservados© - Serrana Corbo</p>
+                    <p class="footer__contenedorP__p">Montevideo, Uruguay.</p>
+                    <p class="footer__contenedorP__p">094 484 512</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                <ul class="listaFooter">
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./beneficios.html">Beneficios</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="./sobremi.html">Sobre mi</a>
+                    </li>
+                    <li class="itemFooter mb-1">
+                        <a class="linkFooter" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="footer__div__wppFixed" href="https://www.whatsapp.com/" target="_blank"><i class="animate__animated animate__pulse  animate__infinite iconFixed fa-brands fa-whatsapp"></i><a>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

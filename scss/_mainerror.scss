@@ -1,0 +1,85 @@
+.main404{
+    overflow-x: hidden;
+    height: auto;
+    .seccion404{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .seccion404__imagen{
+            padding-top: 15vh;
+            height: 85vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .seccion404__texto{
+            display: flex;
+            justify-content: center !important;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 10vh;
+            h1{
+                color: $color-principal;
+                font-size: 70px;
+            }
+            h2{
+                padding-top: 2vh;
+                color: $color-letranegra;
+            }
+            a{
+                text-decoration: none;
+                h3{
+                    font-weight: bold;
+                    padding-top: 2vh;
+                    color: $color-principal;
+                    font-size: map-get($map: $sizes, $key:titulo );
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:768px){
+body{
+    .main404{
+        .seccion404{
+            .seccion404__texto{
+                .seccion404__texto__titulo{
+                    font-size: 40px;
+                }
+                .seccion404__texto__subtitulo{
+                    font-size: map-get($map: $sizes, $key:subtitulo );
+                }
+                .seccion404__texto__ancla{
+                    font-size: map-get($map: $sizes, $key:subtitulo );
+                }
+            }
+        }
+    }
+}
+}
+
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    body{
+        .main404{
+            .seccion404{
+                .seccion404__texto{
+                    .seccion404__texto__titulo{
+                        font-size: 50px;
+                    }
+                    .seccion404__texto__subtitulo{
+                        font-size: map-get($map: $sizes, $key: subtitulo);
+                    }
+                    .seccion404__texto__ancla{
+                        font-size: map-get($map: $sizes, $key:subtitulo );
+                    }
+                }
+            }
+        }
+    }
+}
