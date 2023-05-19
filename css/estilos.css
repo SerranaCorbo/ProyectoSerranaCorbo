@@ -15,7 +15,7 @@
 
 .brillo {
   filter: brightness(50%);
-  filter: opacity(80%);
+  filter: opacity(95%);
 }
 
 .cover {
@@ -389,6 +389,12 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  body .mainBeneficios .row .contenedorTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   body .mainBeneficios .row .contenedorTitulo .subtituloPag {
     font-size: 16px;
   }
@@ -403,6 +409,12 @@ body {
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  body .mainBeneficios .row .contenedorTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   body .mainBeneficios .row .contenedorTitulo .subtituloPag {
     font-size: 18px;
   }
@@ -420,6 +432,12 @@ body {
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
+  body .mainBeneficios .row .contenedorTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   body .mainBeneficios .row .contenedorTitulo .subtituloPag {
     font-size: 20px;
   }
@@ -496,6 +514,7 @@ body {
   }
 }
 .main404 {
+  overflow-x: hidden;
   height: auto;
 }
 .main404 .seccion404 {
@@ -503,9 +522,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.main404 .seccion404 .seccion404__imagen {
+  padding-top: 15vh;
+  height: 85vh;
+}
+.main404 .seccion404 .seccion404__imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .main404 .seccion404 .seccion404__texto {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   align-items: center;
   flex-direction: column;
   padding-top: 10vh;
@@ -522,9 +550,33 @@ body {
   text-decoration: none;
 }
 .main404 .seccion404 .seccion404__texto a h3 {
+  font-weight: bold;
   padding-top: 2vh;
   color: rgb(178, 135, 118);
   font-size: 24px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__titulo {
+    font-size: 40px;
+  }
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__subtitulo {
+    font-size: 20px;
+  }
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__ancla {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__titulo {
+    font-size: 50px;
+  }
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__subtitulo {
+    font-size: 20px;
+  }
+  body .main404 .seccion404 .seccion404__texto .seccion404__texto__ancla {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

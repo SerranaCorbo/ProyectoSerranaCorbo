@@ -58,6 +58,7 @@
         .mainBeneficios{
             .row{
                 .contenedorTitulo{
+                    @include flexbox (center, center, column);
                     .subtituloPag{
                         font-size: map-get($map: $sizes, $key:textochico);
                     }
@@ -85,6 +86,7 @@
         .mainBeneficios{
             .row{
                 .contenedorTitulo{
+                    @include flexbox (center, center, column);
                     .subtituloPag{
                         font-size: map-get($map: $sizes, $key:texto);
                     }
@@ -117,6 +119,7 @@
         .mainBeneficios{
             .row{
                 .contenedorTitulo{
+                    @include flexbox (center, center, column);
                     .subtituloPag{
                         font-size: map-get($map: $sizes, $key:subtitulo);
                     }
