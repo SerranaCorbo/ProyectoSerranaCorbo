@@ -31,12 +31,12 @@ body {
   font-family: "Assistant", sans-serif;
 }
 
-.header{
-    background-color: rgba(250, 245, 243, 0.711);
-    height: auto;
-    position: sticky;
-    top: 0;
-    z-index: 200;
+.header {
+  background-color: rgba(250, 245, 243, 0.889);
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 200;
 }
 .header .item {
   font-size: 16px;
@@ -408,12 +408,28 @@ body {
     font-size: 16px;
   }
 }
-
-.footer{
-    background-color: rgb(250, 245, 243);
-    background-color: rgb(226, 210, 203);
-    height: 40vh;
-    text-align: center;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body .mainBeneficios .row .contenedorTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  body .mainBeneficios .row .contenedorTitulo .subtituloPag {
+    font-size: 18px;
+  }
+  body .mainBeneficios .row .textoBeneficios .texto {
+    font-size: 16px;
+  }
+  body .mainBeneficios .seccionBeneficios {
+    margin-top: 1rem;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficios__contenedorfrase .seccionBeneficios__contenedorfrase__frase {
+    font-size: 18px;
+  }
+  body .mainBeneficios .seccionBeneficios .seccionBeneficiosImagenes img {
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   body .mainBeneficios .row .contenedorTitulo {
@@ -436,6 +452,8 @@ body {
   }
 }
 .mainContacto {
+  /*background-image: url(../assets/img/aceitesescchica.jpg);
+      background-repeat: no-repeat;*/
   padding-top: 10vh;
   padding-bottom: 2vh;
 }
